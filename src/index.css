@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color1: 2, 6, 23;
+  --color2: 26, 51, 101;
+  --color3: 31, 127, 240;
+  --color4: 31, 127, 240;
+  --color5: 10, 16, 31;
+  --color-interactive: 31, 127, 240;
+  --circle-size: 80%;
+  /* --circle-size: 1400px; */
+  --blending: hard-light;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  @apply font-primary;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  @apply text-white;
+}
+
+a {
+  text-decoration: none;
+
+  @apply leading-[26px] font-normal text-base text-[#89a9d7] hover:text-white transition ease-in-out duration-300;
+}
+
+body {
+  width: 100%;
+  position: relative;
+  @apply bg-black-normal;
+
+  &::-webkit-scrollbar {
+    padding-right: 2px;
+    width: 8px;
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    @apply bg-black-light;
+  }
+}
+
+svg,
+img {
+  width: 100%;
+}
+
+.bx {
+  @apply hidden max-lg:block w-10 h-10 cursor-pointer relative;
+
+  &::after {
+    @apply content-[''] w-[70%] h-0.5 block bg-white absolute top-[35%] left-[40%] -translate-x-1/2 -translate-y-1/2 rounded-sm transition-all duration-500 ease-in-out;
+  }
+
+  &::before {
+    @apply content-[''] w-[70%] h-0.5 block bg-white absolute top-[65%] left-[60%] -translate-x-1/2 -translate-y-1/2 rounded-sm transition-all duration-500 ease-in-out;
+  }
+
+  &.open {
+    &::after {
+      @apply absolute top-1/2 left-1/2  -translate-x-1/2 -translate-y-1/2 rotate-[135deg];
+    }
+
+    &::before {
+      @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-[-315deg];
+    }
+  }
+}
+
+.menu-mobile {
+  li {
+    @apply border-b border-black-normal;
+
+    .link-menu-mobile {
+      @apply inline-block w-full h-full py-2.5 px-5 hover:bg-black-normal hover:pl-6;
+    }
+  }
+}
+
+.section-layout {
+  @apply max-w-screen-xl my-0 mx-auto overflow-hidden py-32 px-6;
+  @apply max-lg:py-24 max-lg:px-4;
+}
+
+.gradient-transition {
+  height: 20vh; /* Ajuste conforme necessário */
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    #000
+  ); /* Transição para preto */
+}
