@@ -39,6 +39,7 @@ function App() {
       </div>
       <Hero></Hero>
       <RevealText></RevealText>
+      <div className="h-[1000px]"></div>
     </>
   );
 }

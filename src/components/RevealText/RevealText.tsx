@@ -6,15 +6,18 @@ function RevealText() {
   const paragraph =
     'Sou um desenvolvedor front-end com entusiasmo por design, sempre explorando novas ideias e soluções criativas. O universo do desenvolvimento web é onde libero minha criatividade, buscando constantemente aprimorar minhas habilidades.';
 
-  const element = useRef(null);
+  const sectionRef = useRef(null);
 
   const { scrollYProgress } = useScroll({
-    target: element,
-    offset: ['start 0.9', 'start 0.1'],
+    target: sectionRef,
+    offset: ['start start', 'end end'],
   });
 
   return (
-    <section ref={element} className="section-layout z-10 h-[3000px]">
+    <section
+      ref={sectionRef}
+      className="section-layout z-10 h-[3000px] !overflow-visible"
+    >
       <ParagraphReveal
         value={paragraph}
         progress={scrollYProgress}

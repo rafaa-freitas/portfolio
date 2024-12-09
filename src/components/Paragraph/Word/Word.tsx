@@ -10,8 +10,7 @@ interface WordProps {
 
 function Word({ children, range, progress }: WordProps) {
   const characters = children.split('');
-  const amount = range[1] - range[0];
-  const step = amount / children.length;
+  const step = (range[1] - range[0]) / characters.length;
 
   return (
     <span className={styles.word}>
