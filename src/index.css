@@ -10,7 +10,7 @@
   --color4: 31, 127, 240;
   --color5: 10, 16, 31;
   --color-interactive: 31, 127, 240;
-  --circle-size: 80%;
+  --circle-size: 700px;
   /* --circle-size: 1400px; */
   --blending: hard-light;
 }
@@ -40,6 +40,8 @@ body {
   width: 100%;
   position: relative;
   @apply bg-black-normal;
+  @apply scroll-smooth;
+  @apply overflow-x-hidden;
 
   &::-webkit-scrollbar {
     padding-right: 2px;

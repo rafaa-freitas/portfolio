@@ -46,7 +46,7 @@ function Hero() {
 
   return (
     <section className="section-layout flex flex-col justify-center items-center h-screen gap-12">
-      <div className={styles['gradient-bg'] + ' z-0'}>
+      {/* <div className={styles['gradient-bg'] + ' z-0'}>
         <svg xmlns="http://www.w3.org/2000/svg">
           <defs>
             <filter id="goo">
@@ -72,9 +72,9 @@ function Hero() {
           <div className={styles.g3}></div>
           <div className={styles.g4}></div>
           <div className={styles.g5}></div>
-          {/* <div className={styles.interactive}></div> */}
+          <div className={styles.interactive}></div>
         </div>
-      </div>
+      </div> */}
 
       <div className="text-white z-10 relative text-6xl font-extrabold max-w-[840px] text-center">
         <p className="leading-tight">Olá, sou o Rafael!</p>
