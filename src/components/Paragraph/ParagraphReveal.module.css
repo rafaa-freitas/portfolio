@@ -1,5 +1,5 @@
 .paragraph {
-  @apply text-5xl text-white flex flex-wrap justify-center font-secondary font-light sticky top-[450px];
+  @apply text-5xl text-white flex flex-wrap justify-center font-secondary font-light;
 
   .word {
     @apply mr-2 mt-3;

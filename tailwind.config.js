@@ -21,6 +21,7 @@ export default {
         'black-normal': '#020617',
         'black-light': '#151B26',
         'black-text': '#0F172A',
+        customCyan: 'rgba(0, 255, 255, 0.8)',
       },
     },
   },
