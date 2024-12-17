@@ -1,4 +1,4 @@
-import React, { RefObject, useEffect, useState } from 'react';
+import { RefObject, useEffect, useState } from 'react';
 
 interface VsCodeProps {
   cursorPosition: { x: number; y: number };
