@@ -44,7 +44,7 @@ function ParagraphReveal({ value, progress }: ParagraphRevealProps) {
           rx="21"
           fill="#FFF"
           animate={{
-            y: [200, 200, 150, 350, 320, 350, 350],
+            y: [200, 200, 150, 370, 340, 370, 370],
 
             opacity: [0, 1, 1, 1, 1, 1, 0], // Descendo e dando bounce
           }}

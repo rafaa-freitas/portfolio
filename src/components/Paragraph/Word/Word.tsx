@@ -1,4 +1,4 @@
-import { MotionValue } from 'framer-motion';
+import { motion, MotionValue, useTransform } from 'framer-motion';
 import styles from '../ParagraphReveal.module.css';
 import Character from '../Character/Character';
 
@@ -11,6 +11,13 @@ interface WordProps {
 function Word({ children, range, progress }: WordProps) {
   const characters = children.split('');
   const step = (range[1] - range[0]) / characters.length;
+  const opacity = useTransform(progress, range, [0.1, 1]);
+
+  return (
+    <motion.span style={{ opacity: opacity }} className={styles.word}>
+      {children}
+    </motion.span>
+  );
 
   return (
     <span className={styles.word}>
