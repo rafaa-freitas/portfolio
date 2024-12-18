@@ -1,4 +1,4 @@
-import styles from '../../pages/Hero.module.css';
+import styles from './HeroBackgroundEffect.module.css';
 
 function HeroBackgroundEffect() {
   return (

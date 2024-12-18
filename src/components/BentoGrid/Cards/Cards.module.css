@@ -1,0 +1,18 @@
+.external-link-icon {
+  @apply w-4 h-5 
+    opacity-0 
+    -translate-y-4  
+    transition-all duration-200 delay-75;
+}
+
+.projetos-card {
+  @apply flex flex-col justify-end items-stretch relative col-span-2 row-span-2 order-1 rounded-lg overflow-clip cursor-pointer;
+
+  @apply bg-[#1b1f2e] border-[1.5px] border-[#353845] bg-projetos-card bg-cover bg-no-repeat;
+
+  @apply hover:border-[#6FB1FF] hover:scale-[1.01];
+
+  @apply lg:col-span-2 lg:row-span-3 lg:order-none;
+
+  @apply duration-200 transition-all;
+}

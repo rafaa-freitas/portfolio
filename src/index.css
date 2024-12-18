@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Esteban&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300..700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -102,4 +102,40 @@ img {
     transparent,
     #000
   ); /* Transição para preto */
+}
+
+h1 {
+  @apply text-[#FAFAFA] text-6xl leading-[120%] font-semibold;
+
+  @apply max-lg:text-4xl max-sm:text-[32px];
+}
+
+h2 {
+  @apply text-[#FAFAFA] text-5xl leading-[120%] font-medium;
+
+  @apply max-lg:text-3xl max-sm:text-[32px];
+}
+
+h3 {
+  @apply text-[#FAFAFA] text-4xl leading-[120%] font-normal;
+
+  @apply max-lg:text-2xl max-sm:text-[28px];
+}
+
+h4 {
+  @apply text-[#FAFAFA] text-3xl leading-[120%] font-normal;
+
+  @apply max-lg:text-xl max-lg:leading-[130%] max-sm:text-xl max-sm:leading-[140%];
+}
+
+h5 {
+  @apply text-[#FAFAFA] text-2xl leading-[140%] font-normal;
+
+  @apply max-lg:text-lg max-lg:leading-[140%];
+}
+
+h6 {
+  @apply text-[#FAFAFA] text-lg leading-normal font-normal;
+
+  @apply max-lg:text-base;
 }

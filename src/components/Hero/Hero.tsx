@@ -1,17 +1,21 @@
 /// <reference types="vite-plugin-svgr/client" />
-import Button from '../components/Button/Button';
+import Button from '../Button/Button';
 import { Download } from 'lucide-react';
-import GithubIcon from '../assets/github.svg?react';
-import HeroBackgroundEffect from '../components/HeroBackgroundEffect/HeroBackgroundEffect';
+import GithubIcon from '../../assets/github.svg?react';
+import HeroBackgroundEffect from './HeroBackgroundEffect/HeroBackgroundEffect';
 
 function Hero() {
   return (
     <>
       <HeroBackgroundEffect />
       <section className="section-layout flex flex-col justify-center items-center h-screen gap-12">
-        <div className="text-white z-10 relative text-6xl font-extrabold max-w-[840px] text-center">
-          <p className="leading-tight">Olá, sou o Rafael!</p>
-          <p className="leading-tight">Bem-vindo(a) ao meu canto da internet</p>
+        <div className="text-white z-10 relative max-w-[840px] text-center">
+          <h1>
+            <span className="leading-tight block">Olá, sou o Rafael!</span>{' '}
+            <span className="leading-tight block">
+              Bem-vindo(a) ao meu canto da internet
+            </span>
+          </h1>
         </div>
 
         <div className="flex gap-6 z-10 justify-center items-center">

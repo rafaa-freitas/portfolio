@@ -6,6 +6,7 @@ interface ProjectSvgProps {
   cardsRef: RefObject<HTMLDivElement>;
   mouseOnCard: boolean;
 }
+
 function ProjectSvg({
   cursorPosition,
   cardsRef,
@@ -35,8 +36,6 @@ function ProjectSvg({
         height: cardRect.height * 2.5,
       };
 
-      // const cxPercentage = (cursorPosition.x - 600 / cardRect.width) * 100;
-      // const cyPercentage = (cursorPosition.y + 150 / cardRect.height) * 100;
       const cxPercentage =
         (cursorPosition.x / cardRect.width) * viewBox.width + viewBox.x;
       const cyPercentage =
