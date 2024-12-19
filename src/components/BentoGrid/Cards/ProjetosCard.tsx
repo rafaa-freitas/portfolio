@@ -22,7 +22,7 @@ function ProjetosCard() {
 
   return (
     <div
-      className={styles['projetos-card'] + ' ' + 'group'}
+      className={styles.card + ' ' + styles['projetos-card'] + ' ' + 'group'}
       onMouseMove={(event) => handleMouseMove(event)}
       onMouseLeave={() => setIsMouseOnCard(false)}
       onMouseEnter={() => setIsMouseOnCard(true)}
@@ -39,14 +39,14 @@ function ProjetosCard() {
         </div>
       </div>
       <div className="flex items-start p-6 text-white z-10 relative">
-        <h4 className="font-medium text-2xl">Projetos</h4>
+        <h4 className="font-normal text-2xl">Projetos</h4>
 
         <div className="flex items-center justify-center right-6 top-0 bottom-0 absolute">
           <SquareArrowOutUpRight
             className={
               styles['external-link-icon'] +
               ' ' +
-              'group-hover:opacity-100  group-hover:translate-y-0'
+              'group-hover:opacity-100  group-hover:translate-y-[1px]'
             }
           />
         </div>

@@ -5,14 +5,26 @@
     transition-all duration-200 delay-75;
 }
 
-.projetos-card {
-  @apply flex flex-col justify-end items-stretch relative col-span-2 row-span-2 order-1 rounded-lg overflow-clip cursor-pointer;
-
-  @apply bg-[#1b1f2e] border-[1.5px] border-[#353845] bg-projetos-card bg-cover bg-no-repeat;
-
+.card {
+  @apply bg-[#1b1f2e] border-[1.5px] border-[#353845] cursor-pointer rounded-lg;
   @apply hover:border-[#6FB1FF] hover:scale-[1.01];
+  @apply duration-200 transition-all;
+}
+
+.projetos-card {
+  @apply flex flex-col justify-end items-stretch relative col-span-2 row-span-2 order-1 overflow-clip;
+
+  @apply bg-projetos-card bg-cover bg-no-repeat;
 
   @apply lg:col-span-2 lg:row-span-3 lg:order-none;
+}
 
-  @apply duration-200 transition-all;
+.saiba-mais-card {
+  @apply flex flex-col justify-end items-stretch col-span-1 row-span-2 order-2 overflow-clip relative;
+
+  @apply lg:col-span-1 lg:row-span-3 lg:order-none;
+
+  img {
+    image-rendering: auto;
+  }
 }

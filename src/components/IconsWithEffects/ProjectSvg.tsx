@@ -16,8 +16,15 @@ function ProjectSvg({
     cx: '50%',
     cy: '50%',
   });
-  let cardWidth = 615;
-  let cardHeight = 252;
+
+  let cardWidth = 0;
+  let cardHeight = 0;
+
+  if (cardsRef.current !== null) {
+    const cardRect = cardsRef.current.getBoundingClientRect();
+    cardWidth = cardRect.width;
+    cardHeight = cardRect.height;
+  }
 
   useEffect(() => {
     if (
@@ -71,7 +78,6 @@ function ProjectSvg({
           cx={gradientCenter.cx}
           cy={gradientCenter.cy}
         >
-          <stop stopColor="#1F7FF0" />
           {mouseOnCard && <stop stopColor="#1F7FF0" />}
           <stop offset={1} stopColor="#4e515d" />
         </radialGradient>
