@@ -1,22 +1,27 @@
+import EmailCard from './Cards/EmailCard';
+import GithubCard from './Cards/GithubCard';
+import LinkedinCard from './Cards/LinkedinCard';
 import ProjetosCard from './Cards/ProjetosCard';
 import SaibaMaisCard from './Cards/SaibaMaisCard';
+import ToolboxCard from './Cards/ToolboxCard';
+import WhatsappCard from './Cards/WhatsappCard';
 
 function BentoGrid() {
   return (
-    <div className="grid grid-cols-2 grid-rows-4 lg:grid-cols-3 gap-4 w-[80%]">
+    <div className="grid grid-cols-2 grid-rows-4 lg:grid-cols-5 lg:grid-rows-5 gap-6 w-[80%]">
       <ProjetosCard />
 
-      <div className="bg-[#1b1f2e] border-[1.5px] border-[#353845] hover:border-[#4e515d] col-span-1 row-span-1 lg:col-span-1 lg:row-span-1 order-3 lg:order-none rounded-lg">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
-        suscipit aliquam.
-      </div>
+      <LinkedinCard />
+
+      <GithubCard />
+
+      <EmailCard />
+
+      <WhatsappCard />
 
       <SaibaMaisCard />
 
-      <div className="bg-[#1b1f2e] border-[1.5px] border-[#353845] hover:border-[#4e515d] col-span-1 row-span-1 lg:col-span-2 lg:row-span-1 order-4 lg:order-none rounded-lg">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut officiis
-        ipsam fuga
-      </div>
+      <ToolboxCard />
     </div>
   );
 }

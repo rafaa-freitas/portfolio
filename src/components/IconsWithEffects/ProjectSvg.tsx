@@ -74,7 +74,7 @@ function ProjectSvg({
         <radialGradient
           id="blueGradient"
           gradientUnits="userSpaceOnUse"
-          r="35%"
+          r="25%"
           cx={gradientCenter.cx}
           cy={gradientCenter.cy}
         >

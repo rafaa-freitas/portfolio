@@ -10,6 +10,7 @@ function About() {
           Um pouco sobre mim e as coisas que já desenvolvi e conquistei
         </h3>
       </div>
+
       <BentoGrid />
     </section>
   );

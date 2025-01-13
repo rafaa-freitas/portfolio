@@ -37,6 +37,8 @@ a {
 body {
   width: 100%;
   position: relative;
+
+  /* @apply bg-slate-900; */
   @apply bg-black-normal;
   @apply scroll-smooth;
   @apply overflow-x-hidden;
@@ -50,6 +52,17 @@ body {
   &::-webkit-scrollbar-thumb {
     border-radius: 8px;
     @apply bg-black-light;
+  }
+
+  &::before {
+    position: absolute;
+    inset: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+
+    filter: url(#noiseFilter);
+    mix-blend-mode: multiply;
   }
 }
 
@@ -139,3 +152,31 @@ h6 {
 
   @apply max-lg:text-base;
 }
+
+/* .toolbox-card .toolbox-bg .toolbox-bg-circle {
+  -webkit-transition: fill 0.4s ease;
+  -moz-transition: fill 0.4s ease;
+  -o-transition: fill 0.4s ease;
+  transition: fill 1.4s ease;
+  stroke: #c4c4c4;
+  fill: red;
+}
+
+.toolbox-card:hover .toolbox-bg .toolbox-bg-circle {
+  fill: url(#default_gradient);
+  stroke: #353845;
+} */
+
+/* 
+.toolbox-bg .toolbox-bg-circle {
+  -webkit-transition: fill 0.4s ease;
+  -moz-transition: fill 0.4s ease;
+  -o-transition: fill 0.4s ease;
+  transition: fill 1.4s ease;
+  stroke: #c4c4c4;
+  fill: red;
+}
+
+.toolbox-bg:hover .toolbox-bg-circle {
+  fill: white;
+} */

@@ -28,7 +28,7 @@ function ProjetosCard() {
       onMouseEnter={() => setIsMouseOnCard(true)}
       ref={cardsRef}
     >
-      <div className="absolute w-full h-full inset-0 bg-gradient-to-t from-[#171F2C] to-[#17202e12] z-10"></div>
+      <div className="absolute w-full h-[50%] bottom-0 bg-gradient-to-t from-[#171F2C] to-[#17202e12] z-10"></div>
       <div className="flex-1 w-full h-full absolute z-0">
         <div className="icons-container h-[100%]">
           <ProjectSvg

@@ -23,7 +23,7 @@ function Hero() {
             text="Github"
             onClick={() => {}}
             variant="secondary"
-            icon={<GithubIcon />}
+            icon={<GithubIcon width={24} height={24} />}
           ></Button>
 
           <Button
