@@ -3,6 +3,7 @@ import About from '../components/About/About';
 import Hero from '../components/Hero/Hero';
 // import ToolboxSvg from '../components/IconsWithEffects/ToolboxSvg';
 import RevealText from '../components/RevealText/RevealText';
+import SocialMedia from '../components/SocialMedia/SocialMedia';
 
 function Home() {
   return (
@@ -10,6 +11,7 @@ function Home() {
       <Hero />
       <RevealText />
       <About />
+      <SocialMedia />
       {/* <ToolboxSvg /> */}
     </>
   );

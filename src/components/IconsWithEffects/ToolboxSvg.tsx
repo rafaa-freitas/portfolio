@@ -5,8 +5,8 @@ function ToolboxSvg({ hover = false }: ToolboxSvgProps) {
   return (
     <svg
       width="780"
-      height="500"
-      viewBox="0 145 780 780"
+      height="400"
+      viewBox="0 160 780 780"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className="toolbox-bg"

@@ -23,7 +23,7 @@
 .saiba-mais-card {
   @apply flex flex-col justify-end items-stretch col-span-1 row-span-2 order-2 overflow-clip relative;
 
-  @apply lg:col-span-2 lg:row-span-3 lg:order-none;
+  @apply lg:col-span-2 lg:row-span-5 lg:order-none;
 
   img {
     image-rendering: auto;

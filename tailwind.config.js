@@ -15,8 +15,8 @@ export default {
     extend: {
       backgroundImage: {
         'projetos-card': "url('./images/dot_bg.png')",
-        'card-gradient':
-          'linear-gradient(224.78deg, #5390E3 8.12%, #1357B3 92.21%)',
+        'text-gradient': 'linear-gradient(90deg, #5390E3 0%, #1357B3 100%)',
+        // 'text-gradient': 'linear-gradient(90deg, #6BBAFF 0%, #037DE9 100%)',
       },
       fontFamily: {
         primary: 'Space Grotesk',
