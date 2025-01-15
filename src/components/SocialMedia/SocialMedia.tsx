@@ -1,6 +1,4 @@
-// import LinkedinCardIcon from '../BentoGrid/Cards/LinkedinCardIcon';
 /// <reference types="vite-plugin-svgr/client" />
-// import ArrowExternalLink from '../../assets/arrow-external-link.svg?react';
 import LinkedinIcon from '../../assets/linkedin_social_media.svg?react';
 import GithubIcon from '../../assets/github_social_media.svg?react';
 import AtSignIcon from '../../assets/at_sign_social_media.svg?react';
