@@ -24,14 +24,21 @@ html {
   scroll-behavior: smooth;
 }
 
+/* header {
+  background: linear-gradient(180deg, #030917 0%, rgba(3, 9, 23, 0) 100%),
+    linear-gradient(180deg, #030917 0%, rgba(3, 9, 23, 0) 100%),
+    linear-gradient(180deg, #030917 0%, rgba(3, 9, 23, 0) 100%);
+} */
+
 button {
   @apply text-white;
 }
 
 a {
   text-decoration: none;
-
-  @apply leading-[26px] font-normal text-base text-[#89a9d7] hover:text-white transition ease-in-out duration-300;
+  /* text-[#89a9d7] */
+  @apply !text-[#fafcfc] opacity-60;
+  @apply leading-[26px] font-normal text-base  transition ease-in-out duration-300 hover:opacity-100;
 }
 
 body {
@@ -84,10 +91,9 @@ img {
 
 .menu-mobile {
   li {
-    @apply border-b border-black-normal;
-
     .link-menu-mobile {
-      @apply inline-block w-full h-full py-2.5 px-5 hover:bg-black-normal hover:pl-6;
+      @apply transition-all duration-300;
+      @apply inline-block w-full h-full py-2.5 px-5 hover:bg-black-normal/50 hover:pl-6;
     }
   }
 }
@@ -141,31 +147,3 @@ h6 {
 
   @apply max-lg:text-base;
 }
-
-/* .toolbox-card .toolbox-bg .toolbox-bg-circle {
-  -webkit-transition: fill 0.4s ease;
-  -moz-transition: fill 0.4s ease;
-  -o-transition: fill 0.4s ease;
-  transition: fill 1.4s ease;
-  stroke: #c4c4c4;
-  fill: red;
-}
-
-.toolbox-card:hover .toolbox-bg .toolbox-bg-circle {
-  fill: url(#default_gradient);
-  stroke: #353845;
-} */
-
-/* 
-.toolbox-bg .toolbox-bg-circle {
-  -webkit-transition: fill 0.4s ease;
-  -moz-transition: fill 0.4s ease;
-  -o-transition: fill 0.4s ease;
-  transition: fill 1.4s ease;
-  stroke: #c4c4c4;
-  fill: red;
-}
-
-.toolbox-bg:hover .toolbox-bg-circle {
-  fill: white;
-} */

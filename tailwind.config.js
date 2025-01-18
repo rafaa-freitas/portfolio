@@ -16,6 +16,8 @@ export default {
       backgroundImage: {
         'projetos-card': "url('./images/dot_bg.png')",
         'text-gradient': 'linear-gradient(90deg, #5390E3 0%, #1357B3 100%)',
+        'header-gradient':
+          'linear-gradient(180deg, #030917 0%, rgba(3, 9, 23, 0) 100%),linear-gradient(180deg, #030917 0%, rgba(3, 9, 23, 0) 100%), linear-gradient(180deg, #030917 0%, rgba(3, 9, 23, 0) 100%)',
         // 'text-gradient': 'linear-gradient(90deg, #6BBAFF 0%, #037DE9 100%)',
       },
       fontFamily: {

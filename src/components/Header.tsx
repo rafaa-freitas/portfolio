@@ -10,7 +10,15 @@ function Header() {
 
   return (
     <>
-      <header className="w-full border-black-light border-b h-20 flex justify-between items-center px-8 py-2 fixed z-50 bg-black-normal/40 backdrop-blur-[6px]">
+      {/* border-black-light border-b bg-black-normal/60 */}
+      <header
+        className={
+          (isMobileMenuOpen
+            ? 'backdrop-blur-lg bg-black-normal '
+            : 'backdrop-blur-[1px] bg-header-gradient ') +
+          'transition-all duration-500 ease-in-out w-full h-20 flex justify-between items-center px-8 py-2 fixed z-50'
+        }
+      >
         <nav className="flex justify-between items-center w-full">
           <div className="logo max-w-16 min-w-8">
             <img src="./images/logo.svg"></img>

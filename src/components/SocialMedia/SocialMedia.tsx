@@ -12,33 +12,39 @@ function SocialMedia() {
     <>
       <div className="border-[1.5px] border-[white] opacity-10"></div>
       <section className="section-layout">
-        <div className="flex gap-4 justify-center flex-wrap">
-          <div className={styles['social-media-link-container']}>
-            {' '}
-            <LinkedinIcon />
-            <div className="flex justify-start items-center">
-              <h6 className={styles['social-media-link']}>Linkedin</h6>
-              <ArrowExternalLink />
+        <div className="flex gap-8 justify-center flex-wrap">
+          <a href="https://www.linkedin.com/in/rafaafreitas/" target="_blank">
+            <div className={styles['social-media-link-container']}>
+              {' '}
+              <LinkedinIcon />
+              <div className="flex justify-start items-center">
+                <h6 className={styles['social-media-link']}>Linkedin</h6>
+                <ArrowExternalLink />
+              </div>
             </div>
-          </div>
+          </a>
 
-          <div className={styles['social-media-link-container']}>
-            {' '}
-            <GithubIcon width={36} height={36} />
-            <div className="flex justify-start items-center">
-              <h6 className={styles['social-media-link']}>Github</h6>
-              <ArrowExternalLink />
+          <a href="https://github.com/rafaa-" target="_blank">
+            <div className={styles['social-media-link-container']}>
+              {' '}
+              <GithubIcon width={36} height={36} />
+              <div className="flex justify-start items-center">
+                <h6 className={styles['social-media-link']}>Github</h6>
+                <ArrowExternalLink />
+              </div>
             </div>
-          </div>
+          </a>
 
-          <div className={styles['social-media-link-container']}>
-            {' '}
-            <AtSignIcon />
-            <div className="flex justify-start items-center">
-              <h6 className={styles['social-media-link']}>Email</h6>
-              <ArrowExternalLink />
+          <a href="mailto:rafael.freitasfa@gmail.com">
+            <div className={styles['social-media-link-container']}>
+              {' '}
+              <AtSignIcon />
+              <div className="flex justify-start items-center">
+                <h6 className={styles['social-media-link']}>Email</h6>
+                <ArrowExternalLink />
+              </div>
             </div>
-          </div>
+          </a>
 
           <div className={styles['social-media-link-container']}>
             {' '}
@@ -57,11 +63,6 @@ function SocialMedia() {
               <ArrowExternalLink />
             </div>
           </div>
-
-          {/* 
-       
-         
-          <h6>Resume.pdf</h6> */}
         </div>
       </section>
       <div className="border-[1.5px] border-[white] opacity-10"></div>
