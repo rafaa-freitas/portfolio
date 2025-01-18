@@ -2,12 +2,15 @@
 import Button from '../Button/Button';
 import { Download } from 'lucide-react';
 import GithubIcon from '../../assets/github.svg?react';
-import HeroBackgroundEffect from './HeroBackgroundEffect/HeroBackgroundEffect';
+import NewHeroBackgroundEffect from './HeroBackgroundEffect/NewHeroBackgroundEffect';
+// import HeroBackgroundEffect from './HeroBackgroundEffect/HeroBackgroundEffect';
 
 function Hero() {
   return (
     <>
-      <HeroBackgroundEffect />
+      {/* <HeroBackgroundEffect /> */}
+      <NewHeroBackgroundEffect />
+      {/* </div> */}
       <section className="section-layout flex flex-col justify-center items-center h-screen gap-12">
         <div className="text-white z-10 relative max-w-[840px] text-center">
           <h1>
