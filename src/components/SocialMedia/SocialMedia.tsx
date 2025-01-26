@@ -24,7 +24,7 @@ function SocialMedia() {
             </div>
           </a>
 
-          <a href="https://github.com/rafaa-" target="_blank">
+          <a href="https://github.com/rafaa-freitas" target="_blank">
             <div className={styles['social-media-link-container']}>
               {' '}
               <GithubIcon width={36} height={36} />

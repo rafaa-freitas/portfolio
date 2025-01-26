@@ -13,6 +13,15 @@
   --blending: hard-light;
 }
 
+::-moz-selection {
+  /* Code for Firefox */
+  @apply bg-blue-dark;
+}
+
+::selection {
+  @apply bg-blue-dark;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -37,8 +46,8 @@ button {
 a {
   text-decoration: none;
   /* text-[#89a9d7] */
-  @apply !text-[#fafcfc] opacity-60;
-  @apply leading-[26px] font-normal text-base  transition ease-in-out duration-300 hover:opacity-100;
+  @apply !text-[#fafcfc];
+  @apply leading-[26px] font-normal text-base transition ease-in-out duration-300 hover:opacity-100;
 }
 
 body {

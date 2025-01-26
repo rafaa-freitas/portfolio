@@ -4,6 +4,7 @@ import About from '../components/About/About';
 import Hero from '../components/Hero/Hero';
 // import ToolboxSvg from '../components/IconsWithEffects/ToolboxSvg';
 import RevealText from '../components/RevealText/RevealText';
+import SelectedWorks from '../components/SelectedWorks/SelectedWorks';
 import SocialMedia from '../components/SocialMedia/SocialMedia';
 
 function Home() {
@@ -11,6 +12,7 @@ function Home() {
     <>
       <Hero />
       <RevealText />
+      <SelectedWorks />
       <About />
       <SocialMedia />
       {/* <Footer /> */}

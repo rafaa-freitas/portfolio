@@ -26,11 +26,15 @@ function Header() {
 
           <ul className="menu list-none flex max-lg:hidden space-x-4">
             <li>
-              <a className="cursor-pointer font-bold text-xl">Sobre</a>
+              <a className="cursor-pointer font-bold text-xl opacity-60">
+                Sobre
+              </a>
             </li>
             <li>
               {' '}
-              <a className="cursor-pointer font-bold text-xl">Contato</a>
+              <a className="cursor-pointer font-bold text-xl opacity-60">
+                Contato
+              </a>
             </li>
           </ul>
         </nav>

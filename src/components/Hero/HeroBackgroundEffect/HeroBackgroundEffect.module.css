@@ -2,7 +2,7 @@
   width: 100vw;
   position: absolute;
   overflow: hidden;
-
+  z-index: -99;
   inset: 0;
 
   svg {
