@@ -1,10 +1,6 @@
-// import EmailCard from './Cards/EmailCard';
-// import GithubCard from './Cards/GithubCard';
-// import LinkedinCard from './Cards/LinkedinCard';
 import ProjetosCard from './Cards/ProjetosCard';
 import SaibaMaisCard from './Cards/SaibaMaisCard';
 import ToolboxCard from './Cards/ToolboxCard';
-// import WhatsappCard from './Cards/WhatsappCard';
 
 function BentoGrid() {
   return (

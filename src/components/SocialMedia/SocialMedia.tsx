@@ -6,11 +6,13 @@ import WhatsAppIcon from '../../assets/whatsapp.svg?react';
 import ResumeIcon from '../../assets/resume.svg?react';
 import ArrowExternalLink from '../Icons/ArrowExternalLink';
 import styles from './SocialMedia.module.css';
+import Divider from '../Divider/Divider';
+// import Divider from '../Divider/Divider';
 
 function SocialMedia() {
   return (
     <>
-      <div className="border-[1.5px] border-[white] opacity-10"></div>
+      <Divider />
       <section className="section-layout">
         <div className="flex gap-8 justify-center flex-wrap">
           <a href="https://www.linkedin.com/in/rafaafreitas/" target="_blank">
@@ -65,7 +67,6 @@ function SocialMedia() {
           </div>
         </div>
       </section>
-      <div className="border-[1.5px] border-[white] opacity-10"></div>
     </>
   );
 }

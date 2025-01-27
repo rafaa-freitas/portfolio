@@ -1,13 +1,21 @@
-import Footer from './components/Footer/Footer';
-import Header from './components/Header';
+import { Route, Routes } from 'react-router';
+import Projects from './pages/Projects';
 import Home from './pages/Home';
+import Layout from './layouts/Layout';
 
 function App() {
   return (
     <>
-      <Header></Header>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+        </Route>
+      </Routes>
+      {/* <Header></Header>
+      <Projects />
       <Home></Home>
-      <Footer />
+      <Footer /> */}
     </>
   );
 }

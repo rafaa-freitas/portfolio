@@ -1,8 +1,12 @@
 import { useState } from 'react';
 import MenuMobile from './MenuMobile';
+import { NavLink, useLocation } from 'react-router';
 
 function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
+
+  const location = useLocation();
+  console.log(location.pathname);
 
   function toggleIsMobileMenuOpen() {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -21,20 +25,47 @@ function Header() {
       >
         <nav className="flex justify-between items-center w-full">
           <div className="logo max-w-16 min-w-8">
-            <img src="./images/logo.svg"></img>
+            <NavLink to="/">
+              <img src="./images/logo.svg"></img>
+            </NavLink>
           </div>
 
           <ul className="menu list-none flex max-lg:hidden space-x-4">
             <li>
-              <a className="cursor-pointer font-bold text-xl opacity-60">
-                Sobre
-              </a>
+              <NavLink
+                to="/"
+                className={
+                  (location.pathname == '/'
+                    ? '!text-blue-light opacity-100'
+                    : 'opacity-60 ') + 'cursor-pointer font-medium text-xl '
+                }
+              >
+                Home
+              </NavLink>
             </li>
             <li>
-              {' '}
-              <a className="cursor-pointer font-bold text-xl opacity-60">
-                Contato
-              </a>
+              <NavLink
+                to="/about"
+                className={
+                  (location.pathname == '/about'
+                    ? '!text-blue-light opacity-100'
+                    : 'opacity-60 ') + 'cursor-pointer font-medium text-xl'
+                }
+              >
+                Sobre
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/projects"
+                className={
+                  (location.pathname == '/projects'
+                    ? '!text-blue-light opacity-100'
+                    : 'opacity-60 ') + 'cursor-pointer font-medium text-xl'
+                }
+              >
+                Projects
+              </NavLink>{' '}
             </li>
           </ul>
         </nav>

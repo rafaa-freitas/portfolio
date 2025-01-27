@@ -52,12 +52,6 @@ function ProjectSvg({
         cx: `${cxPercentage}`,
         cy: `${cyPercentage}`,
       });
-      console.log(
-        (cursorPosition.x / cardRect.width) * 100,
-        (cursorPosition.y / cardRect.height) * 100,
-      );
-
-      console.log(cardRect.width, cardRect.height);
     }
   }, [cursorPosition, cardsRef]);
 

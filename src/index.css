@@ -46,7 +46,7 @@ button {
 a {
   text-decoration: none;
   /* text-[#89a9d7] */
-  @apply !text-[#fafcfc];
+  @apply text-[#fafcfc];
   @apply leading-[26px] font-normal text-base transition ease-in-out duration-300 hover:opacity-100;
 }
 

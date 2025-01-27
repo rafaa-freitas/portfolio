@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import ProjectSvg from '../../IconsWithEffects/ProjectSvg';
 import { SquareArrowOutUpRight } from 'lucide-react';
 import styles from './Cards.module.css';
+import { Link } from 'react-router';
 
 function ProjetosCard() {
   const cardsRef = useRef<HTMLDivElement>(null);
@@ -21,6 +22,7 @@ function ProjetosCard() {
   };
 
   return (
+    // <Link component="div"></Link>
     <div
       className={styles.card + ' ' + styles['projetos-card'] + ' ' + 'group'}
       onMouseMove={(event) => handleMouseMove(event)}
@@ -38,19 +40,22 @@ function ProjetosCard() {
           />
         </div>
       </div>
-      <div className="flex items-start p-6 text-white z-10 relative">
-        <h4 className="font-normal text-2xl">Projetos</h4>
 
-        <div className="flex items-center justify-center right-6 top-0 bottom-0 absolute">
-          <SquareArrowOutUpRight
-            className={
-              styles['external-link-icon'] +
-              ' ' +
-              'group-hover:opacity-100  group-hover:translate-y-[1px]'
-            }
-          />
+      <Link to="/projects" className="z-10 h-full flex items-end">
+        <div className="flex items-start p-6 text-white relative w-full">
+          <h4 className="font-normal text-2xl">Projetos</h4>
+
+          <div className="flex items-center justify-center right-6 top-0 bottom-0 absolute">
+            <SquareArrowOutUpRight
+              className={
+                styles['external-link-icon'] +
+                ' ' +
+                'group-hover:opacity-100  group-hover:translate-y-[1px]'
+              }
+            />
+          </div>
         </div>
-      </div>
+      </Link>
     </div>
   );
 }
