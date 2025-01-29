@@ -13,7 +13,7 @@ function Button({ text, onClick, variant = 'primary', icon }: ButtonProps) {
     <button
       onClick={onClick}
       className={
-        'flex gap-2 font-secondary font-semibold rounded-full py-4 px-6 hover:-translate-y-2 transition-all ease-in-out duration-[0.6s] whitespace-nowrap ' +
+        'flex gap-2 font-primary font-semibold rounded-full py-4 px-6 hover:-translate-y-2 transition-all ease-in-out duration-[0.6s] whitespace-nowrap ' +
         variantStyles
       }
     >

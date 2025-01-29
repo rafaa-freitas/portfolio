@@ -15,19 +15,19 @@ function Footer() {
             <Logo width={36} height={40} />
           </div>
 
-          <p className="text-[#9FA5B0] text-base font-secondary font-light opacity-70">
+          <p className="text-[#9FA5B0] text-base font-primary font-light opacity-70">
             Todos os direitos reservados®
           </p>
         </div>
 
         <div className="flex flex-col text-[#9FA5B0] justify-center">
-          <p className="font-secondary font-light opacity-70">
+          <p className="font-primary font-light opacity-70">
             Portfolio Rafael Freitas ® 2025
           </p>
-          <p className="font-secondary font-light opacity-70">
+          <p className="font-primary font-light opacity-70">
             by: Rafael Freitas
           </p>
-          <p className="font-secondary font-light opacity-70">
+          <p className="font-primary font-light opacity-70">
             rafael.freitasfa@gmail.com
           </p>
         </div>

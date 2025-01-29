@@ -14,7 +14,7 @@ function MenuMobile({ isOpen, toggleMenu }: MenuMobileProps) {
         <ul className="nav-mobile mt-4">
           <li onClick={toggleMenu}>
             <a href="#" className="link-menu-mobile text-4xl font-bold">
-              Sobre
+              About
             </a>
           </li>
 

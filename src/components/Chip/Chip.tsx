@@ -11,7 +11,7 @@ function Chip({
 }: ChipProps) {
   return (
     <div
-      className={`rounded-full py-1 px-3 leading-5 flex items-center font-medium font-secondary ${background} ${color}`}
+      className={`rounded-full py-1 px-3 leading-5 flex items-center font-medium font-primary ${background} ${color}`}
     >
       {children}
     </div>

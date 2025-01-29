@@ -21,8 +21,8 @@ export default {
         // 'text-gradient': 'linear-gradient(90deg, #6BBAFF 0%, #037DE9 100%)',
       },
       fontFamily: {
-        primary: 'Space Grotesk',
-        secondary: 'Inter',
+        primary: 'Satoshi',
+        secondary: 'Space Grotesk',
       },
       colors: {
         'black-normal': '#020617',

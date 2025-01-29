@@ -37,7 +37,7 @@ function Header() {
                 className={
                   (location.pathname == '/'
                     ? '!text-blue-light opacity-100'
-                    : 'opacity-60 ') + 'cursor-pointer font-medium text-xl '
+                    : 'opacity-60 ') + 'cursor-pointer font-bold text-xl '
                 }
               >
                 Home
@@ -49,10 +49,10 @@ function Header() {
                 className={
                   (location.pathname == '/about'
                     ? '!text-blue-light opacity-100'
-                    : 'opacity-60 ') + 'cursor-pointer font-medium text-xl'
+                    : 'opacity-60 ') + 'cursor-pointer font-bold text-xl'
                 }
               >
-                Sobre
+                About
               </NavLink>
             </li>
             <li>
@@ -61,7 +61,7 @@ function Header() {
                 className={
                   (location.pathname == '/projects'
                     ? '!text-blue-light opacity-100'
-                    : 'opacity-60 ') + 'cursor-pointer font-medium text-xl'
+                    : 'opacity-60 ') + 'cursor-pointer font-bold text-xl'
                 }
               >
                 Projects

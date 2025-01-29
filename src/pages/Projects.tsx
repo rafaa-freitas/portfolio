@@ -1,4 +1,3 @@
-import Chip from '../components/Chip/Chip';
 import SelectedWorksLink from '../components/shared/SelectedWorksLink/SelectedWorksLink';
 
 function Projects() {
@@ -7,89 +6,54 @@ function Projects() {
       <h2 className="font-bold text-6xl">Projects</h2>
 
       <div className="w-full">
-        <div className="py-6 flex flex-col gap-4">
-          <SelectedWorksLink
-            href="https://finance-ai-livid.vercel.app/"
-            title="Finance Manager"
-          />
+        <ul className="list-none flex flex-col gap-8 max-xl:gap-16">
+          <li>
+            <SelectedWorksLink
+              href="https://finance-ai-livid.vercel.app/"
+              title="Finance Manager"
+              techs={[
+                'NextJs',
+                'React',
+                'Typescript',
+                'Prisma',
+                'Tailwind',
+                'ShadcnUI',
+              ]}
+              imgSrc="/images/finance_manager_img.jpg"
+              projectNumber="01"
+            ></SelectedWorksLink>
+          </li>
 
-          <div className="flex items-center gap-2 text-[#fafcfc] text-xs flex-wrap">
-            <span className="font-medium font-secondary">Made with: </span>
-            <Chip>NextJs</Chip>
-            <Chip>React</Chip>
-            <Chip>Typescript</Chip>
-            <Chip>Prisma</Chip>
-            <Chip>Tailwind</Chip>
-            <Chip>ShadcnUI</Chip>
-          </div>
-        </div>
+          <li>
+            <SelectedWorksLink
+              href="https://github.com/rafaa-freitas/plann.er"
+              title="Plann.er"
+              techs={['React', 'Typescript', 'Tailwind', 'ShadcnUI']}
+              imgSrc="/images/planner_img.jpg"
+              projectNumber="02"
+            ></SelectedWorksLink>
+          </li>
 
-        <div className="border-[1.5px] border-[white] opacity-10"></div>
+          <li>
+            <SelectedWorksLink
+              href="https://rafaa-freitas.github.io/codebank/"
+              title="CodeBank"
+              techs={['HTML', 'CSS', 'SaSS', 'Javascript']}
+              imgSrc="/images/codebank_img.jpg"
+              projectNumber="03"
+            />
+          </li>
 
-        <div className="selected-work-link py-6 flex flex-col gap-4">
-          <SelectedWorksLink
-            href="https://github.com/rafaa-freitas/plann.er"
-            title="Travel Planner"
-          />
-
-          <div className="flex items-center gap-2 text-[#fafcfc] text-xs flex-wrap">
-            <span className="font-medium font-secondary">Made with: </span>
-            <Chip>React</Chip>
-            <Chip>Typescript</Chip>
-            <Chip>Tailwind</Chip>
-            <Chip>ShadcnUI</Chip>
-          </div>
-        </div>
-
-        <div className="border-[1.5px] border-[white] opacity-10"></div>
-
-        <div className="selected-work-link py-6 flex flex-col gap-4">
-          <SelectedWorksLink
-            href="https://rafaa-freitas.github.io/codebank/"
-            title="CodeBank"
-          />
-
-          <div className="flex items-center gap-2 text-[#fafcfc] text-xs flex-wrap">
-            <span className="font-medium font-secondary">Made with: </span>
-            <Chip>HTML</Chip>
-            <Chip>CSS</Chip>
-            <Chip>SaSS</Chip>
-            <Chip>Javascript</Chip>
-          </div>
-        </div>
-
-        <div className="border-[1.5px] border-[white] opacity-10"></div>
-
-        <div className="selected-work-link py-6 flex flex-col gap-4">
-          <SelectedWorksLink
-            href="https://blog-react-taupe.vercel.app/"
-            title="Blog"
-          />
-
-          <div className="flex items-center gap-2 text-[#fafcfc] text-xs flex-wrap">
-            <span className="font-medium font-secondary">Made with: </span>
-            <Chip>React</Chip>
-            <Chip>Typescript</Chip>
-            <Chip>Tailwind</Chip>
-            <Chip>JSON Server</Chip>
-          </div>
-        </div>
-
-        <div className="border-[1.5px] border-[white] opacity-10"></div>
-
-        <div className="selected-work-link py-6 flex flex-col gap-4">
-          <SelectedWorksLink
-            href="https://dogs-react-4a23gl9kp-rafaafreitas-projects.vercel.app/"
-            title="Dogs"
-          />
-
-          <div className="flex items-center gap-2 text-[#fafcfc] text-xs flex-wrap">
-            <span className="font-medium font-secondary">Made with: </span>
-            <Chip>React</Chip>
-            <Chip>CSS</Chip>
-            <Chip>SaSS</Chip>
-          </div>
-        </div>
+          <li>
+            <SelectedWorksLink
+              href="https://dogs-react-4a23gl9kp-rafaafreitas-projects.vercel.app/"
+              title="Dogs"
+              techs={['React', 'CSS', 'SaSS', 'Javascript']}
+              imgSrc="/images/dogs_img.jpg"
+              projectNumber="04"
+            />
+          </li>
+        </ul>
       </div>
     </section>
   );
