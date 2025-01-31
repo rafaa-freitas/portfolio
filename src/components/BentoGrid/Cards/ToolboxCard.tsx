@@ -1,7 +1,8 @@
 import { SquareArrowOutUpRight } from 'lucide-react';
 import styles from './Cards.module.css';
-import ToolboxSvg from '../../IconsWithEffects/ToolboxSvg';
+import ToolboxSvg from '../../CardsBackground/ToolboxSvg';
 import { useState } from 'react';
+import { Link } from 'react-router';
 
 function ToolboxCard() {
   const [isHover, setIsHover] = useState(false);
@@ -30,19 +31,21 @@ function ToolboxCard() {
         </div>
       </div>
 
-      <div className="flex items-start p-6 text-white z-10 relative">
-        <h4 className="font-normal text-2xl">Techs & Tools</h4>
+      <Link to="/toolbox" className="z-10 h-full flex items-end">
+        <div className="flex items-start p-6 relative w-full">
+          <h4 className="font-normal text-2xl">Techs & Tools</h4>
 
-        <div className="flex items-center justify-center right-6 top-0 bottom-0 absolute">
-          <SquareArrowOutUpRight
-            className={
-              styles['external-link-icon'] +
-              ' ' +
-              'group-hover:opacity-100  group-hover:translate-y-[1px]'
-            }
-          />
+          <div className="flex items-center justify-center right-6 top-0 bottom-0 absolute">
+            <SquareArrowOutUpRight
+              className={
+                styles['external-link-icon'] +
+                ' ' +
+                'group-hover:opacity-100  group-hover:translate-y-[1px]'
+              }
+            />
+          </div>
         </div>
-      </div>
+      </Link>
     </div>
   );
 }

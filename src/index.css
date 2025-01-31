@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Esteban&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Esteban&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300..700&display=swap&family=Assistant:wght@200..800&display=swap&family=Assistant:wght@200..800&family=Manrope:wght@200..800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -31,7 +31,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  @apply font-primary;
+  @apply font-primary text-white-normal;
 }
 
 html {
@@ -118,7 +118,7 @@ img {
 
 .section-layout {
   @apply max-w-screen-xl my-0 mx-auto overflow-hidden py-32 px-6;
-  @apply max-lg:py-24 max-lg:px-4;
+  @apply max-lg:py-24 max-lg:px-8;
 }
 
 .gradient-transition {

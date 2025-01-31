@@ -1,5 +1,5 @@
 .social-media-link-container {
-  @apply flex gap-2 justify-center items-center p-4 text-[#fafcfc] cursor-pointer;
+  @apply flex gap-2 justify-center items-center p-4 cursor-pointer;
 
   &:hover {
     .social-media-link {
@@ -21,9 +21,9 @@
 }
 
 .social-media-link {
-  @apply opacity-75 text-[20px] leading-[150%] p-2 relative transition-all duration-500 !text-[#fafcfc];
+  @apply opacity-75 text-[20px] leading-[150%] p-2 relative transition-all duration-500;
 
   &::after {
-    @apply content-[''] absolute top-[90%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-0 h-[1px] bg-[#fafcfc] transition-all duration-500;
+    @apply content-[''] absolute top-[90%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-0 h-[1px] bg-white-normal transition-all duration-500;
   }
 }

@@ -14,9 +14,13 @@ function Hero() {
       <section className="section-layout flex flex-col justify-center items-center h-screen gap-12">
         <div className="text-white z-10 relative max-w-[840px] text-center">
           <h1>
-            <span className="leading-tight block">Olá, sou o Rafael!</span>{' '}
             <span className="leading-tight block">
-              Bem-vindo(a) ao meu canto da internet
+              Hello, I'm Rafael!
+              {/* Olá, sou o Rafael! */}
+            </span>{' '}
+            <span className="leading-tight block">
+              Welcome to my portfolio.
+              {/* Bem-vindo(a) ao meu portfólio */}
             </span>
           </h1>
         </div>
@@ -32,7 +36,7 @@ function Hero() {
           <Button
             text="Download CV"
             onClick={() => {}}
-            icon={<Download />}
+            icon={<Download color="#0F172A" />}
           ></Button>
         </div>
       </section>

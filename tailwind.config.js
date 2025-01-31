@@ -23,6 +23,9 @@ export default {
       fontFamily: {
         primary: 'Satoshi',
         secondary: 'Space Grotesk',
+        assistant: 'Assistant',
+        manrope: 'Manrope',
+        inter: 'Inter',
       },
       colors: {
         'black-normal': '#020617',
@@ -32,6 +35,7 @@ export default {
         'blue-normal': '#1F7FF0',
         'blue-dark': '#1A3365',
         'card-border': '#35455F',
+        'white-normal': '#F9FAFE',
         customCyan: 'rgba(0, 255, 255, 0.8)',
       },
     },

@@ -1,6 +1,7 @@
 interface ToolboxSvgProps {
   hover: boolean;
 }
+
 function ToolboxSvg({ hover = false }: ToolboxSvgProps) {
   return (
     <svg
@@ -9,7 +10,7 @@ function ToolboxSvg({ hover = false }: ToolboxSvgProps) {
       viewBox="0 160 780 780"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="toolbox-bg"
+      className="toolbox-bg max-lg:scale-150 max-lg:translate-y-24 max-md:translate-y-24"
     >
       <defs>
         <radialGradient id="dynamicGradient" cx="50%" cy="50%" r="50%">
@@ -22,6 +23,7 @@ function ToolboxSvg({ hover = false }: ToolboxSvgProps) {
                 'stop-color 0.6s ease-in-out, stop-opacity 0.4s ease-in-out',
             }}
           />
+
           <stop
             offset="100%"
             style={{
