@@ -18,7 +18,7 @@ function RevealText() {
   return (
     <section
       ref={sectionRef}
-      className="section-layout z-10 h-[3400px] !overflow-visible"
+      className="section-layout z-10 h-[3400px] !overflow-visible max-md:hidden"
     >
       <ParagraphReveal
         value={enParagraph}
