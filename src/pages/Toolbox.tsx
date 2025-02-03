@@ -1,18 +1,17 @@
 import ApplicationCard from '../components/ApplicationCard/ApplicationCard';
+import TechCard from '../components/TechCard/TechCard';
 
 function Toolbox() {
   return (
     <section className="section-layout flex flex-col justify-center items-center gap-16">
       <div className="flex flex-col items-center w-3/4 gap-2">
-        <h1 className="font-bold">
-          Hardware and software I use (almost) every day.
-        </h1>
+        <h1 className="font-bold">Techs & Tools</h1>
       </div>
 
       <div className="flex flex-col gap-6 items-center h-min">
-        <h3 className="font-light">Applications</h3>
+        <h3 className="font-light">Tools</h3>
 
-        <div className="grid grid-rows-2 grid-cols-3 gap-4 w-auto h-auto">
+        <div className="grid grid-rows-2 grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 gap-4 w-auto h-auto">
           <ApplicationCard
             imageAlt="Figma"
             imageSrc="./images/vscode_card.png"
@@ -57,9 +56,95 @@ function Toolbox() {
         </div>
       </div>
 
-      {/* <div className="">
-        <h3 className="font-light">Hardware</h3>
-      </div> */}
+      <div className="flex flex-col gap-6 items-center h-min">
+        <h3 className="font-light">Techs</h3>
+
+        <div className="grid grid-rows-2 grid-cols-3 max-lg:grid-cols-2 max-md:grid-cols-1 gap-4 w-auto h-auto">
+          <TechCard
+            imageAlt="HTML 5"
+            imageSrc="./images/html_card.png"
+            title="HTML 5"
+            techLink="https://developer.mozilla.org/pt-BR/docs/Web/HTML"
+          />
+
+          <TechCard
+            imageAlt="CSS 3"
+            imageSrc="./images/css_card.png"
+            title="CSS 3"
+            techLink="https://developer.mozilla.org/pt-BR/docs/Web/CSS"
+          />
+
+          <TechCard
+            imageAlt="Sass"
+            imageSrc="./images/sass_card.png"
+            title="Sass"
+            techLink="https://sass-lang.com/"
+          />
+
+          <TechCard
+            imageAlt="Tailwind"
+            imageSrc="./images/tailwind_card.png"
+            title="Tailwind"
+            techLink="https://tailwindcss.com/"
+          />
+
+          <TechCard
+            imageAlt="Bootstrap"
+            imageSrc="./images/bootstrap_card.png"
+            title="Bootstrap"
+            techLink="https://getbootstrap.com/"
+          />
+
+          <TechCard
+            imageAlt="Javascript"
+            imageSrc="./images/js_card.png"
+            title="Javascript"
+            techLink="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
+          />
+
+          <TechCard
+            imageAlt="Typescript"
+            imageSrc="./images/ts_card.png"
+            title="Typescript"
+            techLink="https://www.typescriptlang.org/"
+          />
+
+          <TechCard
+            imageAlt="React"
+            imageSrc="./images/react_card.png"
+            title="React"
+            techLink="https://react.dev/"
+          />
+
+          <TechCard
+            imageAlt="NextJs"
+            imageSrc="./images/next_card.png"
+            title="NextJs"
+            techLink="https://nextjs.org/"
+          />
+
+          <TechCard
+            imageAlt="Angular"
+            imageSrc="./images/angular_card.png"
+            title="Angular"
+            techLink="https://angular.dev/"
+          />
+
+          <TechCard
+            imageAlt="Dart"
+            imageSrc="./images/dart_card.png"
+            title="Dart"
+            techLink="https://dart.dev/"
+          />
+
+          <TechCard
+            imageAlt="Flutter"
+            imageSrc="./images/flutter_card.png"
+            title="Flutter"
+            techLink="https://flutter.dev/"
+          />
+        </div>
+      </div>
     </section>
   );
 }
