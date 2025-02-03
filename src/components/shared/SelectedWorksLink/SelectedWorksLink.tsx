@@ -19,8 +19,8 @@ function SelectedWorksLink({
 }: SelectedWorksLinkProps) {
   return (
     <a href={href} target="_blank" className="group">
-      <div className="py-20 px-8 border border-white/10 rounded-[8px] flex gap-4 bg-white bg-opacity-[1%] max-xl:flex-col-reverse max-xl:p-8">
-        <div className="flex flex-[3] max-xl:mt-48 max-md:mt-56">
+      <div className="py-20 px-8 border border-white/10 rounded-[8px] flex gap-4 bg-white/5 max-xl:flex-col-reverse max-xl:p-8">
+        <div className="flex flex-3 max-xl:mt-48 max-md:mt-56">
           <div className="mr-2 mt-1 w-4 group-hover:opacity-0 transition-all duration-500 ease-in-out">
             <span className="font-secondary text-white/50">
               {projectNumber}
@@ -47,7 +47,7 @@ function SelectedWorksLink({
           </div>
         </div>
 
-        <div className="relative flex flex-[2] opacity-0 scale-75 group-hover:opacity-100 transition-all duration-500 ease-in-out group-hover:scale-100 max-xl:w-1/2 max-lg:w-2/3 max-md:w-full max-xl:left-1/2 max-lg:left-1/3 max-md:left-0 max-xl:opacity-100 max-xl:scale-100">
+        <div className="relative flex flex-2 opacity-0 scale-75 group-hover:opacity-100 transition-all duration-500 ease-in-out group-hover:scale-100 max-xl:w-1/2 max-lg:w-2/3 max-md:w-full max-xl:left-1/2 max-lg:left-1/3 max-md:left-0 max-xl:opacity-100 max-xl:scale-100">
           <div className="absolute w-full aspect-auto -top-24 max-xl:-top-16 max-xl:-rotate-[2deg] max-md:rotate-0">
             <img
               src={imgSrc}

@@ -6,7 +6,7 @@ function Footer() {
     <>
       <Divider />
 
-      <div className="section-layout !py-8 flex justify-between flex-wrap gap-6">
+      <div className="section-layout py-8! flex justify-between flex-wrap gap-6">
         <div className="flex flex-col">
           <div className="flex gap-2 items-center">
             <h5 className="font-light text-[#EDEFF0] text-nowrap">

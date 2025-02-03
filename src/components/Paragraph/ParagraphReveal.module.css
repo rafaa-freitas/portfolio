@@ -1,3 +1,5 @@
+@reference 'C:\Users\rafaa\Desktop\portfolio\src\index.css';
+
 .paragraph {
   @apply text-5xl text-white flex flex-wrap justify-center  font-light;
 

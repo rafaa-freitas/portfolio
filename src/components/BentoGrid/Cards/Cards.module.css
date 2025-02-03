@@ -1,3 +1,5 @@
+@reference 'C:\Users\rafaa\Desktop\portfolio\src\index.css';
+
 .external-link-icon {
   @apply w-4 h-5 
     opacity-0 
@@ -14,7 +16,7 @@
 .projetos-card {
   @apply flex flex-col justify-end items-stretch relative col-span-2 row-span-2 order-1 overflow-clip;
 
-  @apply bg-projetos-card bg-cover bg-no-repeat;
+  @apply bg-[url('./images/dot_bg.png')] bg-cover bg-no-repeat;
 
   @apply lg:col-span-3 lg:row-span-3 lg:order-none;
 

@@ -7,6 +7,7 @@ import ResumeIcon from '../../assets/resume.svg?react';
 import ArrowExternalLink from '../Icons/ArrowExternalLink';
 import styles from './SocialMedia.module.css';
 import Divider from '../Divider/Divider';
+import cv from '../../../public/files/rafael_freitas_cv.pdf';
 // import Divider from '../Divider/Divider';
 
 function SocialMedia() {
@@ -48,23 +49,27 @@ function SocialMedia() {
             </div>
           </a>
 
-          <div className={styles['social-media-link-container']}>
-            {' '}
-            <WhatsAppIcon />
-            <div className="flex justify-start items-center">
-              <h6 className={styles['social-media-link']}>WhatsApp</h6>
-              <ArrowExternalLink />
+          <a href="https://wa.me/5521976902000" target="_blank">
+            <div className={styles['social-media-link-container']}>
+              {' '}
+              <WhatsAppIcon />
+              <div className="flex justify-start items-center">
+                <h6 className={styles['social-media-link']}>WhatsApp</h6>
+                <ArrowExternalLink />
+              </div>
             </div>
-          </div>
+          </a>
 
-          <div className={styles['social-media-link-container']}>
-            {' '}
-            <ResumeIcon />
-            <div className="flex justify-start items-center">
-              <h6 className={styles['social-media-link']}>Currículo</h6>
-              <ArrowExternalLink />
+          <a href={cv} target="_blank">
+            <div className={styles['social-media-link-container']}>
+              {' '}
+              <ResumeIcon />
+              <div className="flex justify-start items-center">
+                <h6 className={styles['social-media-link']}>Resume</h6>
+                <ArrowExternalLink />
+              </div>
             </div>
-          </div>
+          </a>
         </div>
       </section>
     </>

@@ -21,7 +21,7 @@ function MenuMobile({ isOpen, toggleMenu }: MenuMobileProps) {
               to="/"
               className={
                 (location.pathname == '/'
-                  ? '!text-blue-light opacity-100'
+                  ? 'text-blue-light! opacity-100'
                   : 'opacity-60 ') +
                 ' link-menu-mobile cursor-pointer font-bold text-4xl '
               }
@@ -35,7 +35,7 @@ function MenuMobile({ isOpen, toggleMenu }: MenuMobileProps) {
               to="/projects"
               className={
                 (location.pathname == '/projects'
-                  ? '!text-blue-light opacity-100'
+                  ? 'text-blue-light! opacity-100'
                   : 'opacity-80 ') +
                 ' link-menu-mobile cursor-pointer font-bold text-4xl '
               }
@@ -49,7 +49,7 @@ function MenuMobile({ isOpen, toggleMenu }: MenuMobileProps) {
               to="/about"
               className={
                 (location.pathname == '/about'
-                  ? '!text-blue-light opacity-100'
+                  ? 'text-blue-light! opacity-100'
                   : 'opacity-80 ') +
                 ' link-menu-mobile cursor-pointer font-bold text-4xl '
               }

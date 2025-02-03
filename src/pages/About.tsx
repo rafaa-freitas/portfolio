@@ -15,7 +15,7 @@ function About() {
             {/* Quando comecei a me interessar por programação. */}
           </h3>
 
-          <p className="text-lg text-white-normal/75 font-inter font-normal">
+          <p className="text-lg text-white-text/75 font-inter font-normal">
             After finishing school, I had to decide which course to pursue. Even
             though I had always liked computers, I chose to study civil
             engineering.
@@ -23,14 +23,14 @@ function About() {
             sempre gostando de computador, optei por começar a cursar engenharia
             civil. */}
           </p>
-          <p className="text-lg text-white-normal/75 font-inter font-normal">
+          <p className="text-lg text-white-text/75 font-inter font-normal">
             During the course, I took Algorithms I and II, and surprisingly,
             they opened my eyes to the world of programming.
             {/* Durante o curso tive uma matéria de algorítmos I e II e,
             inesperadamente, elas abriram meus olhos pro mundo da programação. */}
           </p>
 
-          <p className="text-lg text-white-normal/75 font-inter font-normal">
+          <p className="text-lg text-white-text/75 font-inter font-normal">
             I graduated in engineering and soon after began studying Systems
             Analysis and Development.
             {/* Me formei em engenharia e logo após comecei a cursar Análise e
@@ -44,19 +44,19 @@ function About() {
             {/* O salto para o desenvolvimento web. */}
           </h3>
 
-          <p className="text-lg text-white-normal/75 font-inter font-normal">
+          <p className="text-lg text-white-text/75 font-inter font-normal">
             At the beginning of my new degree, I started exploring various
             career paths and taking additional courses.
             {/* No começo da nova faculdade, já comecei a explorar áreas de atuação
             e fazer cursos paralelos. */}
           </p>
-          <p className="text-lg text-white-normal/75 font-inter font-normal">
+          <p className="text-lg text-white-text/75 font-inter font-normal">
             Due to my passion for visual expression and design, I naturally
             became interested in front-end development and began focusing on it.
             {/* Devido ao meu gosto por expressão visual e design, naturalmente me
             interessei e comecei a focar em desenvolvimento front-end. */}
           </p>
-          <p className="text-lg text-white-normal/75 font-inter font-normal">
+          <p className="text-lg text-white-text/75 font-inter font-normal">
             Along with my college courses, I started studying HTML, CSS, and
             JavaScript, and by the end of my first semester (December 2020), I
             was accepted into an internship selection process.
@@ -72,7 +72,7 @@ function About() {
             {/* O que estou fazendo agora. */}
           </h3>
 
-          <p className="text-lg text-white-normal/75 font-inter font-normal">
+          <p className="text-lg text-white-text/75 font-inter font-normal">
             Currently, I work as a front-end developer at Nasajon, where I help
             create a design system, define software architecture standards, and
             develop some really cool projects.
@@ -80,7 +80,7 @@ function About() {
             Nasajon, colaborando na criação de design system, definindo padrões
             de arquitetura de software e desenvolvendo coisas bem legais. */}
           </p>
-          <p className="text-lg text-white-normal/75 font-inter font-normal">
+          <p className="text-lg text-white-text/75 font-inter font-normal">
             In my free time, I enjoy learning about both front-end and back-end
             technologies, playing video games with friends, and spending time
             with my family.
@@ -90,7 +90,7 @@ function About() {
         </div>
 
         <div className="mt-4">
-          <p className="text-lg text-white-normal/75 font-inter font-normal">
+          <p className="text-lg text-white-text/75 font-inter font-normal">
             Thank you for reading this far and for visiting my portfolio.
             {/* Obrigado por ler até aqui e por visitar meu portfólio. */}
             <br />

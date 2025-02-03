@@ -19,7 +19,7 @@ function Header() {
         className={
           (isMobileMenuOpen
             ? 'backdrop-blur-lg bg-black-normal '
-            : 'backdrop-blur-[1px] bg-header-gradient ') +
+            : 'backdrop-blur-[4px] bg-linear-(--color-header-gradient) ') +
           'transition-all duration-500 ease-in-out w-full h-20 flex justify-between items-center px-8 py-2 fixed z-50'
         }
       >
@@ -36,7 +36,7 @@ function Header() {
                 to="/"
                 className={
                   (location.pathname == '/'
-                    ? '!text-blue-light opacity-100'
+                    ? 'text-blue-light! opacity-100'
                     : 'opacity-60 ') + 'cursor-pointer font-bold text-xl '
                 }
               >
@@ -49,7 +49,7 @@ function Header() {
                 to="/projects"
                 className={
                   (location.pathname == '/projects'
-                    ? '!text-blue-light opacity-100'
+                    ? 'text-blue-light! opacity-100'
                     : 'opacity-60 ') + 'cursor-pointer font-bold text-xl'
                 }
               >
@@ -62,7 +62,7 @@ function Header() {
                 to="/about"
                 className={
                   (location.pathname == '/about'
-                    ? '!text-blue-light opacity-100'
+                    ? 'text-blue-light! opacity-100'
                     : 'opacity-60 ') + 'cursor-pointer font-bold text-xl'
                 }
               >

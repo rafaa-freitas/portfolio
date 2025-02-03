@@ -9,10 +9,10 @@ function HeroBackgroundEffect() {
             <feGaussianBlur
               in="SourceGraphic"
               stdDeviation="10"
-              result="blur"
+              result="blur-sm"
             />
             <feColorMatrix
-              in="blur"
+              in="blur-sm"
               mode="matrix"
               values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
               result="goo"

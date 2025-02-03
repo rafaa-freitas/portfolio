@@ -5,7 +5,7 @@ function SelectedWorks() {
   return (
     <section className="section-layout flex flex-col justify-center items-center gap-12">
       <div className="flex flex-col gap-2 self-center items-center justify-center max-w-[50%]">
-        <h6 className="font-secondary bg-text-gradient bg-clip-text text-transparent font-medium tracking-wide">
+        <h6 className="font-secondary bg-linear-(--color-text-gradient) bg-clip-text text-transparent font-medium tracking-wide">
           PROJECTS HIGHLIGHT
         </h6>
 

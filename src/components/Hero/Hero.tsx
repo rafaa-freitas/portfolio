@@ -4,6 +4,7 @@ import { Download } from 'lucide-react';
 import GithubIcon from '../../assets/github.svg?react';
 import NewHeroBackgroundEffect from './HeroBackgroundEffect/NewHeroBackgroundEffect';
 // import HeroBackgroundEffect from './HeroBackgroundEffect/HeroBackgroundEffect';
+import cv from '../../../public/files/rafael_freitas_cv.pdf';
 
 function Hero() {
   return (
@@ -31,10 +32,12 @@ function Hero() {
             onClick={() => {}}
             variant="secondary"
             icon={<GithubIcon width={24} height={24} />}
+            href="https://github.com/rafaa-freitas"
           ></Button>
 
           <Button
             text="Download CV"
+            href={cv}
             onClick={() => {}}
             icon={<Download color="#0F172A" />}
           ></Button>
