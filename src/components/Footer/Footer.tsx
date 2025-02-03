@@ -16,7 +16,7 @@ function Footer() {
           </div>
 
           <p className="text-[#9FA5B0] text-base font-primary font-light opacity-70">
-            Todos os direitos reservados®
+            All rights reserved®
           </p>
         </div>
 

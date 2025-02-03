@@ -10,7 +10,7 @@ function SelectedWorks() {
         </h6>
 
         <h3 className="text-white font-primary text-center font-extralight">
-          Melhores projetos que já desenvolvi para praticar
+          Collection of my favorite side projects
         </h3>
       </div>
 

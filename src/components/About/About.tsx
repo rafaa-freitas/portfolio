@@ -9,7 +9,7 @@ function About() {
         </h6>
 
         <h3 className="text-white font-primary text-center font-extralight">
-          Um pouco sobre mim e as coisas que já desenvolvi e conquistei
+          A little about myself and the things I have developed and achieved
         </h3>
       </div>
 
