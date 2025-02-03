@@ -1,9 +1,13 @@
+import { NavLink, useLocation } from 'react-router';
+
 interface MenuMobileProps {
   isOpen: boolean;
   toggleMenu: () => void;
 }
 
 function MenuMobile({ isOpen, toggleMenu }: MenuMobileProps) {
+  const location = useLocation();
+
   return (
     <div className="relative">
       <div
@@ -13,15 +17,45 @@ function MenuMobile({ isOpen, toggleMenu }: MenuMobileProps) {
       >
         <ul className="nav-mobile mt-4">
           <li onClick={toggleMenu}>
-            <a href="#" className="link-menu-mobile text-4xl font-bold">
-              About
-            </a>
+            <NavLink
+              to="/"
+              className={
+                (location.pathname == '/'
+                  ? '!text-blue-light opacity-100'
+                  : 'opacity-60 ') +
+                ' link-menu-mobile cursor-pointer font-bold text-4xl '
+              }
+            >
+              Home
+            </NavLink>
           </li>
 
           <li onClick={toggleMenu}>
-            <a href="#" className="link-menu-mobile text-4xl font-bold">
-              Contato
-            </a>
+            <NavLink
+              to="/projects"
+              className={
+                (location.pathname == '/projects'
+                  ? '!text-blue-light opacity-100'
+                  : 'opacity-80 ') +
+                ' link-menu-mobile cursor-pointer font-bold text-4xl '
+              }
+            >
+              Projects
+            </NavLink>
+          </li>
+
+          <li onClick={toggleMenu}>
+            <NavLink
+              to="/about"
+              className={
+                (location.pathname == '/about'
+                  ? '!text-blue-light opacity-100'
+                  : 'opacity-80 ') +
+                ' link-menu-mobile cursor-pointer font-bold text-4xl '
+              }
+            >
+              About
+            </NavLink>
           </li>
         </ul>
       </div>

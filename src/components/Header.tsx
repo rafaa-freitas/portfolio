@@ -43,18 +43,7 @@ function Header() {
                 Home
               </NavLink>
             </li>
-            <li>
-              <NavLink
-                to="/about"
-                className={
-                  (location.pathname == '/about'
-                    ? '!text-blue-light opacity-100'
-                    : 'opacity-60 ') + 'cursor-pointer font-bold text-xl'
-                }
-              >
-                About
-              </NavLink>
-            </li>
+
             <li>
               <NavLink
                 to="/projects"
@@ -66,6 +55,19 @@ function Header() {
               >
                 Projects
               </NavLink>{' '}
+            </li>
+
+            <li>
+              <NavLink
+                to="/about"
+                className={
+                  (location.pathname == '/about'
+                    ? '!text-blue-light opacity-100'
+                    : 'opacity-60 ') + 'cursor-pointer font-bold text-xl'
+                }
+              >
+                About
+              </NavLink>
             </li>
           </ul>
         </nav>
