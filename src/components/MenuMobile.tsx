@@ -8,6 +8,13 @@ interface MenuMobileProps {
 function MenuMobile({ isOpen, toggleMenu }: MenuMobileProps) {
   const location = useLocation();
 
+  const handleLogoClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    if (location.pathname === '/') {
+      event.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="relative">
       <div
@@ -25,6 +32,7 @@ function MenuMobile({ isOpen, toggleMenu }: MenuMobileProps) {
                   : 'opacity-60 ') +
                 ' link-menu-mobile cursor-pointer font-bold text-4xl '
               }
+              onClick={handleLogoClick}
             >
               Home
             </NavLink>

@@ -18,7 +18,7 @@ function SelectedWorks() {
         <ul className="list-none flex flex-col gap-8 max-xl:gap-16">
           <li>
             <SelectedWorksLink
-              href="https://finance-ai-livid.vercel.app/"
+              href="https://finance-manager-livid.vercel.app/"
               title="Finance Manager"
               techs={[
                 'NextJs',
@@ -28,7 +28,7 @@ function SelectedWorks() {
                 'Tailwind',
                 'ShadcnUI',
               ]}
-              imgSrc="/images/finance_manager_img.jpg"
+              imgSrc="/images/finance_manager_img.png"
               projectNumber="01"
             ></SelectedWorksLink>
           </li>

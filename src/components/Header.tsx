@@ -12,6 +12,13 @@ function Header() {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   }
 
+  const handleLogoClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    if (location.pathname === '/') {
+      event.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
   return (
     <>
       {/* border-black-light border-b bg-black-normal/60 */}
@@ -25,7 +32,7 @@ function Header() {
       >
         <nav className="flex justify-between items-center w-full">
           <div className="logo max-w-16 min-w-8">
-            <NavLink to="/">
+            <NavLink to="/" onClick={handleLogoClick}>
               <img src="./images/logo.svg"></img>
             </NavLink>
           </div>
@@ -39,6 +46,7 @@ function Header() {
                     ? 'text-blue-light! opacity-100'
                     : 'opacity-60 ') + 'cursor-pointer font-bold text-xl '
                 }
+                onClick={handleLogoClick}
               >
                 Home
               </NavLink>

@@ -7,8 +7,7 @@ import ResumeIcon from '../../assets/resume.svg?react';
 import ArrowExternalLink from '../Icons/ArrowExternalLink';
 import styles from './SocialMedia.module.css';
 import Divider from '../Divider/Divider';
-import cv from '../../../public/files/rafael_freitas_cv.pdf';
-// import Divider from '../Divider/Divider';
+import cv from '../../assets/files/rafael_freitas_cv.pdf';
 
 function SocialMedia() {
   return (
