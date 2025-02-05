@@ -2,7 +2,7 @@
 import Button from '../Button/Button';
 import { Download } from 'lucide-react';
 import GithubIcon from '../../assets/github.svg?react';
-// import NewHeroBackgroundEffect from './HeroBackgroundEffect/NewHeroBackgroundEffect';
+import NewHeroBackgroundEffect from './HeroBackgroundEffect/NewHeroBackgroundEffect';
 import cv from '../../assets/files/rafael_freitas_cv.pdf';
 import { useTranslation } from 'react-i18next';
 
@@ -12,7 +12,7 @@ function Hero() {
   return (
     <>
       {/* <HeroBackgroundEffect /> */}
-      {/* <NewHeroBackgroundEffect /> */}
+      <NewHeroBackgroundEffect />
       {/* </div> */}
       <section
         className="section-layout flex flex-col justify-center items-center h-screen gap-12"
