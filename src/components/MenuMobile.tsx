@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { NavLink, useLocation } from 'react-router';
 
 interface MenuMobileProps {
@@ -6,6 +7,8 @@ interface MenuMobileProps {
 }
 
 function MenuMobile({ isOpen, toggleMenu }: MenuMobileProps) {
+  const { t } = useTranslation();
+
   const location = useLocation();
 
   const handleLogoClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
@@ -48,7 +51,7 @@ function MenuMobile({ isOpen, toggleMenu }: MenuMobileProps) {
                 ' link-menu-mobile cursor-pointer font-bold text-4xl '
               }
             >
-              Projects
+              {t('projects')}
             </NavLink>
           </li>
 
@@ -62,7 +65,7 @@ function MenuMobile({ isOpen, toggleMenu }: MenuMobileProps) {
                 ' link-menu-mobile cursor-pointer font-bold text-4xl '
               }
             >
-              About
+              {t('about')}
             </NavLink>
           </li>
         </ul>

@@ -1,12 +1,13 @@
 import { useScroll } from 'motion/react';
 import ParagraphReveal from '../Paragraph/ParagraphReveal';
 import { useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 
 function RevealText() {
-  const enParagraph =
-    "I'm a front-end developer with a passion for design, always exploring new ideas and creative solutions. The world of web development is where I unleash my creativity, constantly striving to enhance my skills.";
+  const { t } = useTranslation();
+
   // const paragraph =
-  //   'Sou um desenvolvedor front-end com entusiasmo por design, sempre explorando novas ideias e soluções criativas. O universo do desenvolvimento web é onde libero minha criatividade, buscando constantemente aprimorar minhas habilidades.';
+  //   'Sou desenvolvedor front-end com paixão por design, sempre explorando novas ideias e soluções criativas. No mundo do desenvolvimento web, é onde libero minha criatividade e busco evoluir constantemente.';
 
   const sectionRef = useRef(null);
 
@@ -21,7 +22,7 @@ function RevealText() {
       className="section-layout z-10 h-[3400px] overflow-visible! max-md:hidden"
     >
       <ParagraphReveal
-        value={enParagraph}
+        value={t('reveal_text')}
         progress={scrollYProgress}
       ></ParagraphReveal>
     </section>

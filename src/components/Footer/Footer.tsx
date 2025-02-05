@@ -1,7 +1,10 @@
+import { useTranslation } from 'react-i18next';
 import Logo from '../../assets/logo.svg?react';
 import Divider from '../Divider/Divider';
 
 function Footer() {
+  const { t } = useTranslation();
+
   return (
     <>
       <Divider />
@@ -16,13 +19,13 @@ function Footer() {
           </div>
 
           <p className="text-[#9FA5B0] text-base font-primary font-light opacity-70">
-            All rights reserved®
+            {t('all_rights_reserved')}
           </p>
         </div>
 
         <div className="flex flex-col text-[#9FA5B0] justify-center">
           <p className="font-primary font-light opacity-70">
-            Portfolio Rafael Freitas ® 2025
+            {t('portfolio')} Rafael Freitas ® 2025
           </p>
           <p className="font-primary font-light opacity-70">
             by: Rafael Freitas

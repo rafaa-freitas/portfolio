@@ -16,10 +16,6 @@ function App() {
           <Route path="/toolbox" element={<Toolbox />} />
         </Route>
       </Routes>
-      {/* <Header></Header>
-      <Projects />
-      <Home></Home>
-      <Footer /> */}
     </>
   );
 }

@@ -1,9 +1,12 @@
+import { useTranslation } from 'react-i18next';
 import SelectedWorksLink from '../components/shared/SelectedWorksLink/SelectedWorksLink';
 
 function Projects() {
+  const { t } = useTranslation();
+
   return (
     <section className="section-layout flex flex-col justify-center items-center gap-12">
-      <h2 className="font-bold text-6xl">Projects</h2>
+      <h2 className="font-bold text-6xl">{t('projects')}</h2>
 
       <div className="w-full">
         <ul className="list-none flex flex-col gap-8 max-xl:gap-16">

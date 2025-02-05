@@ -2,14 +2,17 @@
 import Button from '../Button/Button';
 import { Download } from 'lucide-react';
 import GithubIcon from '../../assets/github.svg?react';
-import NewHeroBackgroundEffect from './HeroBackgroundEffect/NewHeroBackgroundEffect';
+// import NewHeroBackgroundEffect from './HeroBackgroundEffect/NewHeroBackgroundEffect';
 import cv from '../../assets/files/rafael_freitas_cv.pdf';
+import { useTranslation } from 'react-i18next';
 
 function Hero() {
+  const { t } = useTranslation();
+
   return (
     <>
       {/* <HeroBackgroundEffect /> */}
-      <NewHeroBackgroundEffect />
+      {/* <NewHeroBackgroundEffect /> */}
       {/* </div> */}
       <section
         className="section-layout flex flex-col justify-center items-center h-screen gap-12"
@@ -17,12 +20,9 @@ function Hero() {
       >
         <div className="text-white z-10 relative max-w-[840px] text-center">
           <h1>
+            <span className="leading-tight block">{t('hero_grettings')}</span>{' '}
             <span className="leading-tight block">
-              Hello, I'm Rafael!
-              {/* Olá, sou o Rafael! */}
-            </span>{' '}
-            <span className="leading-tight block">
-              Welcome to my portfolio.
+              {t('welcome_message')}
               {/* Bem-vindo(a) ao meu portfólio */}
             </span>
           </h1>

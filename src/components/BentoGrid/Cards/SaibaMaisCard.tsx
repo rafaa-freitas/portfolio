@@ -1,8 +1,11 @@
 import { SquareArrowOutUpRight } from 'lucide-react';
 import styles from './Cards.module.css';
 import { Link } from 'react-router';
+import { useTranslation } from 'react-i18next';
 
 function SaibaMaisCard() {
+  const { t } = useTranslation();
+
   return (
     <div
       className={
@@ -25,7 +28,7 @@ function SaibaMaisCard() {
 
       <Link to="/about" className="z-10 h-full flex items-end">
         <div className="flex items-start p-6 z-10 relative w-full">
-          <h4 className="font-normal text-2xl flex-1">About me</h4>
+          <h4 className="font-normal text-2xl flex-1">{t('about_me')}</h4>
 
           <div className="flex flex-3 items-center justify-center right-6 top-0 bottom-0 absolute">
             <SquareArrowOutUpRight

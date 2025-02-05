@@ -3,8 +3,10 @@ import ProjectSvg from '../../CardsBackground/ProjectSvg';
 import { SquareArrowOutUpRight } from 'lucide-react';
 import styles from './Cards.module.css';
 import { Link } from 'react-router';
+import { useTranslation } from 'react-i18next';
 
 function ProjetosCard() {
+  const { t } = useTranslation();
   const cardsRef = useRef<HTMLDivElement>(null);
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   const [isMouseOnCard, setIsMouseOnCard] = useState(false);
@@ -42,7 +44,7 @@ function ProjetosCard() {
 
       <Link to="/projects" className="z-10 h-full flex items-end">
         <div className="flex items-start p-6 relative w-full">
-          <h4 className="font-normal text-2xl">All Projects</h4>
+          <h4 className="font-normal text-2xl">{t('all_projects')}</h4>
 
           <div className="flex items-center justify-center right-6 top-0 bottom-0 absolute">
             <SquareArrowOutUpRight

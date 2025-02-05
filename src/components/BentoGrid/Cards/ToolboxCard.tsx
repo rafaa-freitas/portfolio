@@ -3,8 +3,11 @@ import styles from './Cards.module.css';
 import ToolboxSvg from '../../CardsBackground/ToolboxSvg';
 import { useState } from 'react';
 import { Link } from 'react-router';
+import { useTranslation } from 'react-i18next';
 
 function ToolboxCard() {
+  const { t } = useTranslation();
+
   const [isHover, setIsHover] = useState(false);
 
   function handleMouseEnter() {
@@ -33,7 +36,7 @@ function ToolboxCard() {
 
       <Link to="/toolbox" className="z-10 h-full flex items-end">
         <div className="flex items-start p-6 relative w-full">
-          <h4 className="font-normal text-2xl">Techs & Tools</h4>
+          <h4 className="font-normal text-2xl">{t('techs_tools')}</h4>
 
           <div className="flex items-center justify-center right-6 top-0 bottom-0 absolute">
             <SquareArrowOutUpRight

@@ -1,15 +1,24 @@
 import { useState } from 'react';
 import MenuMobile from './MenuMobile';
 import { NavLink, useLocation } from 'react-router';
+import { useTranslation } from 'react-i18next';
 
 function Header() {
+  const { t, i18n } = useTranslation();
+
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState<boolean>(false);
+  const [isOn, setIsOn] = useState(true);
 
   const location = useLocation();
   console.log(location.pathname);
 
   function toggleIsMobileMenuOpen() {
     setIsMobileMenuOpen(!isMobileMenuOpen);
+  }
+
+  function handleChangeLanguage() {
+    i18n.changeLanguage(i18n.language === 'en' ? 'pt' : 'en');
+    setIsOn(!isOn);
   }
 
   const handleLogoClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
@@ -27,7 +36,7 @@ function Header() {
           (isMobileMenuOpen
             ? 'backdrop-blur-lg bg-black-normal '
             : 'backdrop-blur-[4px] bg-linear-(--color-header-gradient) ') +
-          'transition-all duration-500 ease-in-out w-full h-20 flex justify-between items-center px-8 py-2 fixed z-50'
+          'transition-all duration-500 ease-in-out w-full h-20 flex justify-between items-center px-8 py-2 fixed z-50 gap-4'
         }
       >
         <nav className="flex justify-between items-center w-full">
@@ -61,7 +70,7 @@ function Header() {
                     : 'opacity-60 ') + 'cursor-pointer font-bold text-xl'
                 }
               >
-                Projects
+                {t('projects')}
               </NavLink>{' '}
             </li>
 
@@ -74,11 +83,34 @@ function Header() {
                     : 'opacity-60 ') + 'cursor-pointer font-bold text-xl'
                 }
               >
-                About
+                {t('about')}
               </NavLink>
             </li>
           </ul>
         </nav>
+
+        <button
+          onClick={handleChangeLanguage}
+          className={`min-w-[72px] max-lg:mr-8 h-8 flex items-center justify-between rounded-full p-2 ease-in-out cursor-pointer ${
+            isOn ? 'bg-[#6DA544]/40!' : 'bg-[#D80027]/40!'
+          }`}
+        >
+          <div
+            className={`w-5 h-5 bg-center bg-cover rounded-full shadow-md transition-all transform duration-500 ease-in-out ${
+              isOn
+                ? 'translate-x-8 bg-[url(/images/brazil.png)]'
+                : 'translate-x-0 bg-[url(/images/eua.png)]'
+            }`}
+          />
+
+          <span
+            className={`font-bold mr-1 transform duration-500 ease-in-out ${
+              isOn ? '-translate-x-7' : 'translate-x-0'
+            }`}
+          >
+            {i18n.language === 'en' ? 'EN' : 'BR'}
+          </span>
+        </button>
 
         <div
           className={`bx ${isMobileMenuOpen ? 'open' : ''}`}

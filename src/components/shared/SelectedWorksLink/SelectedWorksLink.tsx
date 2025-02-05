@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import Chip from '../../Chip/Chip';
 import ArrowExternalLink from '../../Icons/ArrowExternalLink';
 import styles from './SelectedWorksLink.module.css';
@@ -17,6 +18,8 @@ function SelectedWorksLink({
   imgSrc,
   projectNumber,
 }: SelectedWorksLinkProps) {
+  const { t } = useTranslation();
+
   return (
     <a href={href} target="_blank" className="group">
       <div className="py-20 px-8 border border-white/10 rounded-[8px] flex gap-4 bg-white/5 max-xl:flex-col-reverse max-xl:p-8">
@@ -39,7 +42,7 @@ function SelectedWorksLink({
             </div>
 
             <div className="flex items-center gap-2 text-[#fafcfc] text-xs flex-wrap">
-              <span className="font-medium font-primary">Made with: </span>
+              <span className="font-medium font-primary">{t('made_with')}</span>
               {techs.map((tech) => (
                 <Chip key={tech}>{tech}</Chip>
               ))}
@@ -58,15 +61,6 @@ function SelectedWorksLink({
         </div>
       </div>
     </a>
-    // <div className={styles['selected-works-link']}>
-    //   <div className="flex gap-2 items-center">
-    //     {' '}
-    //     <h2 className="font-primary tracking-wide text-4xl font-medium">
-    //       {title}
-    //     </h2>
-    //     <ArrowExternalLink width="w-7" height="h-7" className="mt-2" />
-    //   </div>
-    // </div>
   );
 }
 
