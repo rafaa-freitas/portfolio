@@ -22,7 +22,7 @@ function SelectedWorksLink({
   return (
     <a href={href} target="_blank" className="group">
       <div className="py-20 px-8 border border-white/10 rounded-[8px] flex gap-4 bg-white/5 max-xl:flex-col-reverse max-xl:p-8">
-        <div className="flex flex-3 max-xl:mt-48 max-md:mt-56">
+        <div className="flex flex-3 max-xl:mt-48 max-md:mt-[45%]">
           <div className="mr-2 mt-1 w-4 group-hover:opacity-0 transition-all duration-500 ease-in-out">
             <span className="font-secondary text-white/50">
               {projectNumber}
