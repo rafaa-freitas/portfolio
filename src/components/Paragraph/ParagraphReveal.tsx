@@ -1,4 +1,3 @@
-import styles from './ParagraphReveal.module.css';
 import Word from './Word/Word';
 import { motion, MotionValue } from 'framer-motion';
 interface ParagraphRevealProps {
@@ -11,7 +10,7 @@ function ParagraphReveal({ value, progress }: ParagraphRevealProps) {
 
   return (
     <div className="flex flex-col gap-14 py-20 sticky top-[300px]">
-      <p className={styles.paragraph}>
+      <p className={'paragraph'}>
         {words.map((word, i) => {
           const start = i / words.length;
           const end = (i + 1) / words.length;

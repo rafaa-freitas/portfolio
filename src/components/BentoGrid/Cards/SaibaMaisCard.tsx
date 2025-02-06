@@ -1,5 +1,4 @@
 import { SquareArrowOutUpRight } from 'lucide-react';
-import styles from './Cards.module.css';
 import { Link } from 'react-router';
 import { useTranslation } from 'react-i18next';
 
@@ -7,15 +6,7 @@ function SaibaMaisCard() {
   const { t } = useTranslation();
 
   return (
-    <div
-      className={
-        styles.card +
-        ' ' +
-        styles['saiba-mais-card'] +
-        ' ' +
-        'min-h-[350px] relative group'
-      }
-    >
+    <div className={'card saiba-mais-card min-h-[350px] relative group'}>
       <div className="absolute w-full h-[50%] bottom-0 bg-linear-to-t from-[#171F2C] to-[#ffffff00] z-10"></div>
 
       <div className="absolute h-full">
@@ -33,9 +24,7 @@ function SaibaMaisCard() {
           <div className="flex flex-3 items-center justify-center right-6 top-0 bottom-0 absolute">
             <SquareArrowOutUpRight
               className={
-                styles['external-link-icon'] +
-                ' ' +
-                'group-hover:opacity-100 group-hover:translate-y-[1px]'
+                'external-link-icon group-hover:opacity-100 group-hover:translate-y-[1px]'
               }
             />
           </div>

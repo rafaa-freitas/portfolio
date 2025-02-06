@@ -11,9 +11,7 @@ function Hero() {
 
   return (
     <>
-      {/* <HeroBackgroundEffect /> */}
       <NewHeroBackgroundEffect />
-      {/* </div> */}
       <section
         className="section-layout flex flex-col justify-center items-center h-screen gap-12"
         id="home"

@@ -1,0 +1,9 @@
+@layer components {
+  .paragraph {
+    @apply text-5xl text-white flex flex-wrap justify-center  font-light;
+
+    .word {
+      @apply mr-2 mt-3 font-primary;
+    }
+  }
+}

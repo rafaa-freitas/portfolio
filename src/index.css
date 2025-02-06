@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Esteban&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300..700&display=swap&family=Assistant:wght@200..800&display=swap&family=Assistant:wght@200..800&family=Manrope:wght@200..800&display=swap')
 layer(base);
 
+@import '../src/components/BentoGrid/Cards/Cards.css';
+@import '../src/components/Hero/HeroBackgroundEffect/HeroBackgroundEffect.css';
+@import '../src/components/Paragraph/ParagraphReveal.css';
+@import '../src/components/shared/SelectedWorksLink/SelectedWorksLink.css';
+@import '../src/components/SocialMedia/SocialMedia.css';
+
 @import 'tailwindcss';
 
 /* @config '../tailwind.config.js'; */

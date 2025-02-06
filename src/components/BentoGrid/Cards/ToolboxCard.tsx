@@ -1,5 +1,4 @@
 import { SquareArrowOutUpRight } from 'lucide-react';
-import styles from './Cards.module.css';
 import ToolboxSvg from '../../CardsBackground/ToolboxSvg';
 import { useState } from 'react';
 import { Link } from 'react-router';
@@ -22,9 +21,7 @@ function ToolboxCard() {
     <div
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className={
-        styles.card + ' ' + styles['toolbox-card'] + ' group toolbox-card'
-      }
+      className={'card toolbox-card group'}
     >
       <div className="absolute w-full h-[50%] bottom-0 bg-linear-to-t from-[#171f2c] to-[#ffffff00] z-10"></div>
 
@@ -41,9 +38,7 @@ function ToolboxCard() {
           <div className="flex items-center justify-center right-6 top-0 bottom-0 absolute">
             <SquareArrowOutUpRight
               className={
-                styles['external-link-icon'] +
-                ' ' +
-                'group-hover:opacity-100  group-hover:translate-y-[1px]'
+                'external-link-icon group-hover:opacity-100  group-hover:translate-y-[1px]'
               }
             />
           </div>

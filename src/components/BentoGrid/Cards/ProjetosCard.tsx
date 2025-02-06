@@ -1,7 +1,6 @@
 import React, { useRef, useState } from 'react';
 import ProjectSvg from '../../CardsBackground/ProjectSvg';
 import { SquareArrowOutUpRight } from 'lucide-react';
-import styles from './Cards.module.css';
 import { Link } from 'react-router';
 import { useTranslation } from 'react-i18next';
 
@@ -25,7 +24,7 @@ function ProjetosCard() {
 
   return (
     <div
-      className={styles.card + ' ' + styles['projetos-card'] + ' ' + 'group'}
+      className={'card projetos-card group'}
       onMouseMove={(event) => handleMouseMove(event)}
       onMouseLeave={() => setIsMouseOnCard(false)}
       onMouseEnter={() => setIsMouseOnCard(true)}
@@ -49,9 +48,7 @@ function ProjetosCard() {
           <div className="flex items-center justify-center right-6 top-0 bottom-0 absolute">
             <SquareArrowOutUpRight
               className={
-                styles['external-link-icon'] +
-                ' ' +
-                'group-hover:opacity-100  group-hover:translate-y-[1px]'
+                'external-link-icon group-hover:opacity-100  group-hover:translate-y-[1px]'
               }
             />
           </div>

@@ -36,7 +36,7 @@ function Header() {
           (isMobileMenuOpen
             ? 'backdrop-blur-lg bg-black-normal '
             : 'backdrop-blur-[4px] bg-linear-(--color-header-gradient) ') +
-          'transition-all duration-500 ease-in-out w-full h-20 flex justify-between items-center px-8 py-2 fixed z-50 gap-4'
+          'transition-all duration-500 ease-in-out h-20 flex justify-between items-center px-8 py-2 fixed z-50 gap-4 w-dvw'
         }
       >
         <nav className="flex justify-between items-center w-full">

@@ -1,7 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import Chip from '../../Chip/Chip';
 import ArrowExternalLink from '../../Icons/ArrowExternalLink';
-import styles from './SelectedWorksLink.module.css';
 
 interface SelectedWorksLinkProps {
   href: string;
@@ -31,7 +30,7 @@ function SelectedWorksLink({
           </div>
 
           <div className="flex flex-col gap-4 group-hover:-translate-x-6 transition-all duration-500 ease-in-out">
-            <div className={styles['selected-works-link']}>
+            <div className={'selected-works-link'}>
               <div className="flex gap-2 items-center">
                 {' '}
                 <h2 className="font-primary tracking-wide text-4xl font-medium group-hover:text-blue-light">
