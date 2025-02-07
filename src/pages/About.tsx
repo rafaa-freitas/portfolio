@@ -5,9 +5,11 @@ function About() {
 
   return (
     <section className="section-layout flex flex-col justify-center items-center gap-12">
-      <div className="flex flex-col items-center w-3/4 gap-2">
-        <h1 className="font-bold ">{t('hero_grettings')}</h1>
-        <h2 className="font-normal text-center">{t('about_me_message')}</h2>
+      <div className="flex flex-col items-center max-md:items-start w-3/4 gap-2">
+        <h1 className="font-bold max-md:text-[32px]">{t('hero_grettings')}</h1>
+        <h2 className="font-normal text-center max-md:text-2xl max-md:text-start text-white/80">
+          {t('about_me_message')}
+        </h2>
       </div>
 
       <div className="w-3/4 flex flex-col gap-10">
