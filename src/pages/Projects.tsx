@@ -22,7 +22,7 @@ function Projects() {
                 'Tailwind',
                 'ShadcnUI',
               ]}
-              imgSrc="/images/finance_manager_img.jpg"
+              imgSrc="/images/finance_manager_img.png"
               projectNumber="01"
             ></SelectedWorksLink>
           </li>
