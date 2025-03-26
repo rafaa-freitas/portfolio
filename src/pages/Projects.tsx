@@ -1,8 +1,16 @@
 import { useTranslation } from 'react-i18next';
 import SelectedWorksLink from '../components/shared/SelectedWorksLink/SelectedWorksLink';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router';
 
 function Projects() {
   const { t } = useTranslation();
+  const location = useLocation();
+  const { state } = location
+
+  useEffect(() => {
+    console.log(state)
+  }, [state])
 
   return (
     <section className="section-layout flex flex-col justify-center items-center gap-12">

@@ -36,7 +36,7 @@ function Hero() {
           ></Button>
 
           <Button
-            text="Download CV"
+            text={t("resume")}
             href={cv}
             onClick={() => {}}
             icon={<Download color="#0F172A" />}

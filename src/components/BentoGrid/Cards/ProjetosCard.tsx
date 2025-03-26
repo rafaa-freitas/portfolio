@@ -41,7 +41,7 @@ function ProjetosCard() {
         </div>
       </div>
 
-      <Link to="/projects" className="z-10 h-full flex items-end">
+      <Link to="/projects" state={'teste'} className="z-10 h-full flex items-end">
         <div className="flex items-start p-6 relative w-full">
           <h4 className="font-normal text-2xl">{t('all_projects')}</h4>
 
